@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: grey;
+            height: 100%;
+        }
+
+        #newGame,
+        #pauseWrap,
+        #yourScore,
+        #highScoreP,
+        #gameOverP {
+            float: left;
+            height: 30px;
+            width: 150px;
+            background-color: lightblue;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        #gameOver {
+            width: 200px;
+            color: red;
+        }
+
+        #title {
+            color: blue;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        #theCanvas {
+            background-color: white;
+            width: 100%;
+            height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="newGame">New Game</button>
+    <div id="pauseWrap">
+    </div>
+    <p id="yourScore">Your score:
+        <strong id="score"></strong>
+    </p>
+    <p id="highScoreP">High score:
+        <strong id="highScore"></strong>
+    </p>
+    <p id="gameOverP">
+        <strong id="gameOver"></strong>
+    </p>
+    <strong id="title">The Snake Game</strong>
+    <canvas id="theCanvas"></canvas>
+
+    <audio id="ding" src="ding.wav"></audio>
+    <script src="/jquery.min.js"></script>
+    <script src="snake2.js"></script>
+</body>
+
+</html>
